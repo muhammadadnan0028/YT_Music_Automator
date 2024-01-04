@@ -89,7 +89,6 @@ def play_youtube_music_deepLink(video_url, device):
 
     # Minimize the player interface
     random_click(device)
-    time.sleep(30)
 
 
 ########################################################################################################################################
