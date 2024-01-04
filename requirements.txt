@@ -1,0 +1,2 @@
+Requests==2.31.0
+uiautomator2==2.16.23
