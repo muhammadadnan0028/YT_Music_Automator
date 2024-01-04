@@ -1,6 +1,7 @@
 import requests,json,time,random
 from uiautomator2 import Device
 
+version="6.29.57"
 
 def fetch_songs_from_spreadsheet():
     SPREADSHEET_ID = "1u0IRlcGf1xfCm9GvWFjEMC4SRRyAX4BOslK6WYUnvJA"
