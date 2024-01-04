@@ -115,7 +115,10 @@ def randomize(device):
 
 def main():
     device = Device("emulator-5554")
-    randomize(device)
+    while True:
+        randomize(device)
+        print("[+] Waiting for 1 hour")
+        time.sleep(60*60)
 
 
 if __name__ == "__main__":
