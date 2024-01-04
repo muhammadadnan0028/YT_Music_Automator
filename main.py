@@ -34,11 +34,12 @@ def random_click(device):
     skip = device.xpath('//*[@resource-id="com.google.android.apps.youtube.music:id/skip_ad_button"]/android.widget.LinearLayout[1]')
     if skip.exists:
         skip.click()
+        time.sleep(2)
     back_button = device.xpath('//*[@resource-id="com.google.android.apps.youtube.music:id/player_collapse_button"]')
     back_button.click()
     time.sleep(3)
 
-    samples_tab= device.xpath('//*[@text="Samples"]')
+    samples_tab= device.xpath('//*[@text="Home"]')
     samples_tab.click()
     time.sleep(0.2)
     samples_tab.click()
@@ -104,7 +105,7 @@ def randomize(device):
             print(f"[+] Playing {song_title} by {artist} (deeplink)")
             play_youtube_music_deepLink(video_url, device)
             time.sleep(3)
-        time.sleep(30)
+        time.sleep(20)
         
 
 ########################################################################################################################################
