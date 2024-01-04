@@ -107,6 +107,10 @@ def randomize(device):
             play_youtube_music_deepLink(video_url, device)
             time.sleep(3)
         time.sleep(20)
+    time.sleep(3)
+    pause=device.xpath('//*[@resource-id="com.google.android.apps.youtube.music:id/mini_player_play_pause_replay_button"]')
+    if pause.exists:
+        pause.click()
         
 
 ########################################################################################################################################
