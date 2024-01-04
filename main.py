@@ -51,11 +51,6 @@ def random_click(device):
     device.swipe_ext("up", 0.5)
     time.sleep(2)
     device.swipe_ext("down", 0.5)
-    library= device.xpath('//*[@text="Library"]')
-    library.click()
-    time.sleep(0.2)
-    library.click()
-    device.swipe_ext("up", 0.5)
     
 
 ########################################################################################################################################
